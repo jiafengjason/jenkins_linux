@@ -1,0 +1,21 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<slave>
+  <name>168.168.168.61</name>
+  <description>168.168.168.61</description>
+  <remoteFS>/home/jenkins</remoteFS>
+  <numExecutors>1</numExecutors>
+  <mode>NORMAL</mode>
+  <retentionStrategy class="hudson.slaves.RetentionStrategy$Always"/>
+  <launcher class="hudson.plugins.sshslaves.SSHLauncher" plugin="ssh-slaves@1.31.5">
+    <host>168.168.168.61</host>
+    <port>22</port>
+    <credentialsId>fe67f8a9-a0eb-4d53-a127-72c4f5d14dfa</credentialsId>
+    <launchTimeoutSeconds>60</launchTimeoutSeconds>
+    <maxNumRetries>10</maxNumRetries>
+    <retryWaitTime>15</retryWaitTime>
+    <sshHostKeyVerificationStrategy class="hudson.plugins.sshslaves.verifiers.NonVerifyingKeyVerificationStrategy"/>
+    <tcpNoDelay>true</tcpNoDelay>
+  </launcher>
+  <label>168.168.168.61</label>
+  <nodeProperties/>
+</slave>
